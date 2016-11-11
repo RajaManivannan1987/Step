@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.imaginet.ventures.step.activity.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/profileActivityNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/profileActivityPhoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890"
+                android:hint="Phone"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/profileActivityEmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:digits="1234567890"
+                android:focusable="false"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/profileActivityDobEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:digits="1234567890"
+                android:focusable="false"
+                android:hint="DOB"
+                android:inputType="date" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Gender"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/profileActivityMaleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/profileActivityFemaleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/profileActivityOthersRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Others" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/profileActivityHomeLanguageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Home Language*"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/profileActivityYearOfSchoolingEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890"
+                android:hint="Years of Schooling + College (1-20)"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/profileActivityNumberOfLanguageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890"
+                android:hint="No. of Languages You Speak or Understand"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/profileActivityNumberOfLanguageReadWriteEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890"
+                android:hint="No. of Languages You Read and Write"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/profileActivityCommonMediumEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Most Common Medium of Instruction"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/profileActivitySubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/email_button"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:text="Submit"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.imaginet.ventures.step.activity.SignUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_bg" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/login_hindu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/login_logo" />
+
+                <EditText
+                    android:id="@+id/signUpActivityEmailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:textAllCaps="false" />
+
+                <EditText
+                    android:id="@+id/signUpActivityPhoneEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:fontFamily="sans"
+                    android:gravity="center_vertical"
+                    android:hint="Mobile Number(optional)"
+                    android:inputType="number"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/signUpActivityPasswordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:fontFamily="sans"
+                    android:gravity="center_vertical"
+                    android:hint="Create Password"
+                    android:inputType="textPassword"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/signUpActivityConfirmPasswordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:fontFamily="sans"
+                    android:gravity="center_vertical"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="5dp" />
+
+                <Button
+                    android:id="@+id/signUpActivitySubmitButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/email_button"
+                    android:text="SignUp"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/signUpActivityAlreadyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Already have a STEP Account?"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:context="com.imaginet.ventures.step.activity.TestTutorialActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/tutorial_content" />
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/testTutorialActivityYouTubePlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/tutorial_content1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/testTutorialActivitySubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="end|right"
+            android:background="@drawable/google_plus_button"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="I'm Ready! Start Test"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+</ScrollView>

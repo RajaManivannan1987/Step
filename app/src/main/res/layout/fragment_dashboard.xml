@@ -1,0 +1,317 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dashboard_backgground"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.imaginet.ventures.step.fragment.DashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/dashboardFragmentNumberProgressBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            custom:max="100"
+            custom:progress="0"
+            custom:progress_reached_color="@color/colorPrimary"
+            custom:progress_text_color="@android:color/white"
+            custom:progress_text_visibility="visible"
+            custom:progress_unreached_color="#80ffffff" />
+
+        <Button
+            android:id="@+id/dashboardFragmentContinueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/email_button"
+            android:text="Continue"
+
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp">
+
+            <com.github.lzyzsd.circleprogress.ArcProgress
+                android:id="@+id/dashboardFragmentOverallArcProgress"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                custom:arc_bottom_text_size="0sp"
+                custom:arc_finished_color="@color/colorPrimary"
+                custom:arc_max="12"
+                custom:arc_progress="0"
+                custom:arc_stroke_width="10dp"
+                custom:arc_suffix_text_padding="0dp"
+                custom:arc_suffix_text_size="0sp"
+                custom:arc_text_color="@android:color/white"
+                custom:arc_text_size="0sp"
+                custom:arc_unfinished_color="#80ffffff" />
+
+            <TextView
+                android:id="@+id/dashboardFragmentOverallTextView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/overall_text_bg"
+                android:gravity="center"
+                android:text="GO"
+                android:textColor="@android:color/white"
+                android:textSize="38dp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overall"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.github.lzyzsd.circleprogress.ArcProgress
+                    android:id="@+id/dashboardFragmentReadArcProgress"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    custom:arc_bottom_text_size="0sp"
+                    custom:arc_finished_color="@color/colorPrimary"
+                    custom:arc_max="12"
+                    custom:arc_progress="0"
+                    custom:arc_stroke_width="4dp"
+                    custom:arc_suffix_text=""
+                    custom:arc_suffix_text_size="0sp"
+                    custom:arc_text_color="@color/colorPrimary"
+                    custom:arc_text_size="0sp"
+                    custom:arc_unfinished_color="#80ffffff" />
+
+                <TextView
+                    android:id="@+id/dashboardFragmentReadArcProgressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/dashboardFragmentReadArcProgressImageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/read" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.github.lzyzsd.circleprogress.ArcProgress
+                    android:id="@+id/dashboardFragmentWriteArcProgress"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    custom:arc_bottom_text_size="0sp"
+                    custom:arc_finished_color="@color/colorPrimary"
+                    custom:arc_max="12"
+                    custom:arc_progress="0"
+                    custom:arc_stroke_width="4dp"
+                    custom:arc_suffix_text=""
+                    custom:arc_suffix_text_size="0sp"
+                    custom:arc_text_color="@color/colorPrimary"
+                    custom:arc_text_size="0sp"
+                    custom:arc_unfinished_color="#80ffffff" />
+
+                <TextView
+                    android:id="@+id/dashboardFragmentWriteArcProgressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/dashboardFragmentWriteArcProgressImageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/write" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.github.lzyzsd.circleprogress.ArcProgress
+                    android:id="@+id/dashboardFragmentListenArcProgress"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    custom:arc_bottom_text_size="0sp"
+                    custom:arc_finished_color="@color/colorPrimary"
+                    custom:arc_max="12"
+                    custom:arc_progress="0"
+                    custom:arc_stroke_width="4dp"
+                    custom:arc_suffix_text=""
+                    custom:arc_suffix_text_size="0sp"
+                    custom:arc_text_color="@color/colorPrimary"
+                    custom:arc_text_size="0sp"
+                    custom:arc_unfinished_color="#80ffffff" />
+
+                <TextView
+                    android:id="@+id/dashboardFragmentListenArcProgressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/dashboardFragmentListenArcProgressImageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/listen" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listen"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="wrap_content">
+
+
+                <com.github.lzyzsd.circleprogress.ArcProgress
+                    android:id="@+id/dashboardFragmentSpeakArcProgress"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    custom:arc_bottom_text=""
+
+                    custom:arc_finished_color="@color/colorPrimary"
+                    custom:arc_max="12"
+                    custom:arc_progress="0"
+                    custom:arc_stroke_width="4dp"
+                    custom:arc_suffix_text_size="0sp"
+                    custom:arc_text_color="@android:color/white"
+                    custom:arc_text_size="0sp"
+                    custom:arc_unfinished_color="#80ffffff" />
+
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/lock" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speak"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">STEP</string>
+    <string name="navigation_drawer_open">STEP</string>
+    <string name="navigation_drawer_close">STEP</string>
+    <string name="server_client_id">78599981710-2aqep00f5bqo77lmijin1dt1pufipqg1.apps.googleusercontent.com</string>
+    <string name="tutorial_content">You\'re about to take a <b>timed</b> test of Reading, Listening, and Writing. You will need headphones or Speakers to answer the Listening questions. Please click on the video to confirm that your speakers are working before starting the test.</string>
+    <string name="tutorial_content1">Note: Videos can be played only twice for each question.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_content1">The <b>Standardized Test of English Proficiency</b> (STEP) is an English language certification exam for Indian students and job-seekers. This test will help students, institutions and employers assess and improve their reading, writing, listening and speaking skills.</string>
+    <string name="about_content1_1">This is an important new venture by <b>The Hindu Group</b> and is a core part of our brand and social mission. We hope to leave a lasting impact on all the lives that we touch with this effort and make a major contribution towards improving employability and the skills of Indian youth.</string>
+    <string name="about_content1_2">This version of the test is a beta or pilot and is being used to validate the underlying methodology and technology. The results presented here are preliminary and not fully calibrated. For more information, including technical support, contact us at info@steptest.in or 1800-3000-6063</string>
+    <string name="about_title2">Terms &amp; Conditions</string>
+    <string name="about_content2_1">This is a beta version of the test. The questions, the test algorithm, the results and the technology are all the intellectual property of Kasturi &amp; Sons Ltd. and may not be copied or reproduced in any way for any purpose.</string>
+    <string name="about_content2_2">Equally important, this test and its components are all in a pilot phase. Any results or reports that you see are preliminary. While we have made every possible effort to ensure the accuracy of these results, we are not responsible for any errors that may still be in the system at this stage.</string>
+    <string name="about_content2_3">You further agree that Kasturi &amp; Sons Ltd. has the right to retain, modify, reproduce, and publish the contents of any submission (answers) you provide in the course of taking the test.</string>
+    <string name="about_title3">Privacy Policy</string>
+    <string name="about_content3_1">Data from your test attempts will only be used for the purposes of improving the test and giving you the best possible insight on your own English proficiency. We do not sell or otherwise provide any information we collect to unrelated agencies. Please note that we may contact you on the email address and/or phone number provided by you in your user profile as we release additional products. Please register your interest by clicking on the appropriate product in your Home page dashboard. Thank you.</string>
+    <string name="about_content3_2">You acknowledge and agree that we may disclose information you provide if required to do so by law, or if we, in our sole discretion, believe that disclosure is reasonable to comply with legal requests or orders from competent authorities, including, your employer, school, college, or government agency if taking the test at their request using an official ID.</string>
+
+</resources>

@@ -1,0 +1,25 @@
+Password : 123456
+
+Alias : step
+
+Password : 123456
+
+
+C:\Program Files\Java\jdk1.8.0_77\bin
+
+keytool -exportcert -alias step -keystore D:\Project\step\keystore\releaseKeyStore.jks -list -v
+
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Step
+Issuer: CN=Step
+Serial number: 66a58e61
+Valid from: Fri Sep 16 10:18:07 IST 2016 until: Tue Sep 10 10:18:07 IST 2041
+Certificate fingerprints:
+         MD5:  64:84:96:76:C2:62:30:1C:E3:62:72:E9:29:EA:EC:5D
+         SHA1: 4E:46:B4:5B:18:4D:45:41:04:5B:7E:A5:19:23:82:74:A5:F6:49:47
+         SHA256: 3F:26:27:43:60:5D:18:B9:A3:9D:AC:DA:AC:C5:F6:F2:50:48:68:12:EE:
+EE:1A:A1:60:7B:64:99:3F:22:79:2C
+         Signature algorithm name: SHA256withRSA
+         Version: 3
